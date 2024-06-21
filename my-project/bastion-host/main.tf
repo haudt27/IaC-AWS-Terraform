@@ -7,7 +7,7 @@ terraform {
     }
   }
 }
-#tfsec:ignore:aws-ec2-enforce-http-token-imds
+
 resource "aws_instance" "bastion" {
   ami                         = var.ami
   instance_type               = var.instance_type
