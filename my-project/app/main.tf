@@ -140,7 +140,7 @@ resource "aws_alb_target_group" "api" {
   }
 }
 
-#tfsec:ignore:aws-elb-http-not-used
+
 resource "aws_alb_listener" "front_end" {
   load_balancer_arn = aws_lb.alb1.arn
   port              = "80"
